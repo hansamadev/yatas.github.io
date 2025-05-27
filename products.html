@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürünlerimiz | Yataş</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="https://www.yatasbedding.com/assets/img/yatas_bedding_logo.jpg" alt="Yataş Logo">
+          </a>
+          <h1>YATAŞ</h1>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="products.html" class="active">Ürünler</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="stores.html">Mağazalarımız</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-content">
+      <h1>Ürünlerimiz</h1>
+      <p>Ev ve ofis kullanımı için özel tasarlanmış kaliteli mobilyalar</p>
+    </div>
+  </section>
+
+  <section class="product-filters">
+    <div class="container">
+      <div class="filter-container">
+        <div class="filter-group">
+          <label>Kategoriler</label>
+          <div class="category-tabs">
+            <button class="category-tab active" data-category="all">Tümü</button>
+            <button class="category-tab" data-category="bedroom" id="bedroom">Yatak Odası</button>
+            <button class="category-tab" data-category="livingroom" id="livingroom">Oturma Odası</button>
+            <button class="category-tab" data-category="diningroom" id="diningroom">Yemek Odası</button>
+            <button class="category-tab" data-category="mattress" id="mattress">Yatak & Baza</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-display">
+    <div class="container">
+      <div class="product-grid">
+        <!-- Yatak Odası Ürünleri -->
+        <div class="product-card" data-category="bedroom">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/6489107/pexels-photo-6489107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Elegance Yatak Odası Takımı">
+          </div>
+          <div class="product-info">
+            <h3>Elegance Yatak Odası Takımı</h3>
+            <p>Modern çizgilerle tasarlanmış, şık ve kullanışlı yatak odası takımı.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check-circle"></i> 5 Parçalı Set</span>
+              <span><i class="fas fa-check-circle"></i> LED Aydınlatma</span>
+            </div>
+            <a href="#" class="btn btn-secondary">Detaylar</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="bedroom">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/6186523/pexels-photo-6186523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Harmony Yatak Odası Takımı">
+          </div>
+          <div class="product-info">
+            <h3>Harmony Yatak Odası Takımı</h3>
+            <p>Sade ve zarif tasarımıyla her mekâna uyum sağlayan yatak odası takımı.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check-circle"></i> 6 Parçalı Set</span>
+              <span><i class="fas fa-check-circle"></i> Sürgülü Gardrop</span>
+            </div>
+            <a href="#" class="btn btn-secondary">Detaylar</a>
+          </div>
+        </div>
+
+        <!-- Oturma Odası Ürünleri -->
+        <div class="product-card" data-category="livingroom">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Comfort Plus Köşe Takımı">
+          </div>
+          <div class="product-info">
+            <h3>Comfort Plus Köşe Takımı</h3>
+            <p>Maksimum konfor için tasarlanmış geniş ve şık köşe takımı.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check-circle"></i> Yataklı Model</span>
+              <span><i class="fas fa-check-circle"></i> Depolama Alanı</span>
+            </div>
+            <a href="#" class="btn btn-secondary">Detaylar</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="livingroom">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Modern Berjer">
+          </div>
+          <div class="product-info">
+            <h3>Modern Berjer</h3>
+            <p>Ergonomik yapısıyla uzun süreli oturmalarda bile konfor sunan modern berjer.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check-circle"></i> Ayarlanabilir Sırt</span>
+              <span><i class="fas fa-check-circle"></i> Yüksek Ayaklar</span>
+            </div>
+            <a href="#" class="btn btn-secondary">Detaylar</a>
+          </div>
+        </div>
+
+        <!-- Yemek Odası Ürünleri -->
+        <div class="product-card" data-category="diningroom">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/6758773/pexels-photo-6758773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Elite Yemek Odası Takımı">
+          </div>
+          <div class="product-info">
+            <h3>Elite Yemek Odası Takımı</h3>
+            <p>Özel ahşap detaylarıyla göz dolduran şık yemek odası takımı.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check-circle"></i> 8 Kişilik</span>
+              <span><i class="fas fa-check-circle"></i> Konsol Aynalı</span>
+            </div>
+            <a href="#" class="btn btn-secondary">Detaylar</a>
+          </div>
+        </div>
+
+        <!-- Yatak & Baza Ürünleri -->
+        <div class="product-card" data-category="mattress">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/4857766/pexels-photo-4857766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ortopedik Yatak">
+          </div>
+          <div class="product-info">
+            <h3>Ortopedik Yatak</h3>
+            <p>Omurga sağlığını destekleyen özel yapılı ortopedik yatak.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check-circle"></i> 7 Bölge Teknolojisi</span>
+              <span><i class="fas fa-check-circle"></i> Yıkanabilir Kılıf</span>
+            </div>
+            <a href="#" class="btn btn-secondary">Detaylar</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="mattress">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/6489116/pexels-photo-6489116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Baza & Başlık Seti">
+          </div>
+          <div class="product-info">
+            <h3>Baza & Başlık Seti</h3>
+            <p>Geniş depolama alanı sunan baza ve şık başlık seti.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check-circle"></i> Kolay Açılır Kapanır</span>
+              <span><i class="fas fa-check-circle"></i> Kapitoneli Başlık</span>
+            </div>
+            <a href="#" class="btn btn-secondary">Detaylar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-catalog">
+    <div class="container">
+      <div class="catalog-content">
+        <div class="catalog-info">
+          <h2>Yataş Katalog</h2>
+          <p>Tüm ürün koleksiyonlarımızı dijital katalogumuzda keşfedin. En yeni tasarımlar ve benzersiz mobilya seçenekleri için hemen göz atın.</p>
+          <a href="#" class="btn btn-primary">Kataloğu İndir</a>
+        </div>
+        <div class="catalog-image">
+          <img src="https://images.pexels.com/photos/6580659/pexels-photo-6580659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Yataş Katalog">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>YATAŞ</h2>
+          <p>Kaliteli Yaşam, Kaliteli Uyku</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Kurumsal</h3>
+            <ul>
+              <li><a href="about.html">Hakkımızda</a></li>
+              <li><a href="about.html#vision">Vizyon & Misyon</a></li>
+              <li><a href="about.html#history">Tarihçe</a></li>
+              <li><a href="about.html#quality">Kalite Politikamız</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Ürünlerimiz</h3>
+            <ul>
+              <li><a href="products.html#bedroom">Yatak Odası</a></li>
+              <li><a href="products.html#livingroom">Oturma Odası</a></li>
+              <li><a href="products.html#diningroom">Yemek Odası</a></li>
+              <li><a href="products.html#mattress">Yatak & Baza</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Müşteri Hizmetleri</h3>
+            <ul>
+              <li><a href="contact.html">İletişim</a></li>
+              <li><a href="stores.html">Mağazalarımız</a></li>
+              <li><a href="#">Sıkça Sorulan Sorular</a></li>
+              <li><a href="#">Garanti Koşulları</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>İletişim</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> Merkez: Ankara Asfaltı 25. km, Kayseri</li>
+              <li><i class="fas fa-phone"></i> +90 352 321 21 21</li>
+              <li><i class="fas fa-envelope"></i> info@yatas.com.tr</li>
+            </ul>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Yataş Grup. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

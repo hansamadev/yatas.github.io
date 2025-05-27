@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hizmetlerimiz - Yataş</title>
+  <meta name="description" content="Yataş'ın sunduğu montaj, teslimat, dekorasyon danışmanlığı ve diğer hizmetler hakkında bilgi alın.">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="fixed w-full z-50 transition-all duration-300 bg-white shadow-sm">
+    <div class="container-custom py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="text-3xl font-bold font-heading text-primary-800">
+          YATAŞ
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link">Ana Sayfa</a>
+          <a href="about.html" class="nav-link">Hakkımızda</a>
+          <a href="products.html" class="nav-link">Ürünler</a>
+          <a href="services.html" class="nav-link active">Hizmetler</a>
+          <a href="contact.html" class="nav-link">İletişim</a>
+        </nav>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+          <svg class="w-6 h-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg class="w-6 h-6 close-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-white shadow-lg absolute w-full hidden">
+      <div class="container-custom py-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="index.html" class="nav-link">Ana Sayfa</a>
+          <a href="about.html" class="nav-link">Hakkımızda</a>
+          <a href="products.html" class="nav-link">Ürünler</a>
+          <a href="services.html" class="nav-link active">Hizmetler</a>
+          <a href="contact.html" class="nav-link">İletişim</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="pt-24 pb-12 bg-primary-50">
+    <div class="container-custom">
+      <h1 class="text-4xl md:text-5xl font-bold text-center font-heading">Hizmetlerimiz</h1>
+      <p class="text-lg text-center text-gray-600 mt-4 max-w-3xl mx-auto">Yataş ile alışveriş deneyiminizi mükemmelleştiren hizmetlerimizi keşfedin.</p>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="section bg-white">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white p-8 rounded-lg shadow-md text-center hover-lift fade-in">
+          <div class="inline-block p-4 rounded-full bg-primary-100 text-primary-600 mb-6">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Ücretsiz Teslimat</h3>
+          <p class="text-gray-600">Tüm Türkiye'ye ücretsiz teslimat hizmeti sunuyoruz. Deneyimli ekibimiz ürünlerinizi özenle taşır ve evinize kadar getirir.</p>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="bg-white p-8 rounded-lg shadow-md text-center hover-lift fade-in" style="animation-delay: 0.2s;">
+          <div class="inline-block p-4 rounded-full bg-primary-100 text-primary-600 mb-6">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Profesyonel Montaj</h3>
+          <p class="text-gray-600">Uzman montaj ekibimiz, mobilyalarınızı profesyonel bir şekilde kurar. Herhangi bir sorun yaşamamanız için montaj sonrası kontroller yapılır.</p>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="bg-white p-8 rounded-lg shadow-md text-center hover-lift fade-in" style="animation-delay: 0.4s;">
+          <div class="inline-block p-4 rounded-full bg-primary-100 text-primary-600 mb-6">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Esnek Ödeme Seçenekleri</h3>
+          <p class="text-gray-600">Birçok banka ile anlaşmalı taksit seçenekleri sunuyoruz. Kredi kartı, nakit veya banka havalesi ile ödeme yapabilirsiniz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Services -->
+  <section class="section bg-gray-50">
+    <div class="container-custom">
+      <h2 class="section-title mb-16 fade-in">Hizmet Detaylarımız</h2>
+      
+      <!-- Service Detail 1 -->
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+        <div class="fade-in">
+          <h3 class="section-subtitle">Dekorasyon Danışmanlığı</h3>
+          <p class="text-gray-700 mb-4">Uzman iç mimarlarımız, ev veya ofisiniz için en uygun mobilya ve dekorasyon önerilerini sunar. Size özel çözümler ve tasarımlar ile yaşam alanlarınızı dönüştürürüz.</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-primary-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Ev ziyaretleri ve ölçüm</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-primary-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>3D görselleştirme ve tasarım önerileri</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-primary-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Renk ve malzeme seçimleri</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Randevu Al</a>
+        </div>
+        <div class="relative fade-in" style="animation-delay: 0.3s;">
+          <img src="https://images.pexels.com/photos/6969867/pexels-photo-6969867.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Dekorasyon Danışmanlığı" class="rounded-lg shadow-xl w-full h-auto">
+          <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-200 rounded-lg hidden md:block -z-10"></div>
+        </div>
+      </div>
+      
+      <!-- Service Detail 2 -->
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+        <div class="order-2 md:order-1 relative fade-in" style="animation-delay: 0.3s;">
+          <img src="https://images.pexels.com/photos/8088438/pexels-photo-8088438.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Özel Tasarım Mobilya" class="rounded-lg shadow-xl w-full h-auto">
+          <div class="absolute -top-6 -left-6 w-32 h-32 bg-accent-200 rounded-lg hidden md:block -z-10"></div>
+        </div>
+        <div class="order-1 md:order-2 fade-in">
+          <h3 class="section-subtitle">Özel Tasarım Mobilya</h3>
+          <p class="text-gray-700 mb-4">Hayalinizdeki mobilyayı birlikte tasarlayalım. Özel ölçü ve isteklerinize göre tasarlanan mobilyalarımız, yaşam alanlarınıza tam uyum sağlar.</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-primary-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Kişiye özel tasarım ve planlama</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-primary-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Yüksek kaliteli malzeme seçenekleri</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-primary-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Profesyonel üretim ve montaj</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Teklif Al</a>
+        </div>
+      </div>
+      
+      <!-- Service Detail 3 -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="fade-in">
+          <h3 class="section-subtitle">Bakım ve Onarım</h3>
+          <p class="text-gray-700 mb-4">Mobilya ve yataklarınızın bakım ve onarımını profesyonel ekibimiz gerçekleştirir. Uzun ömürlü kullanım için düzenli bakım hizmeti sunuyoruz.</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-primary-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Yerinde bakım ve onarım hizmeti</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-primary-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Orijinal yedek parça kullanımı</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-primary-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Garanti kapsamında ücretsiz bakım</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Servis Talebi</a>
+        </div>
+        <div class="relative fade-in" style="animation-delay: 0.3s;">
+          <img src="https://images.pexels.com/photos/3637786/pexels-photo-3637786.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Bakım ve Onarım" class="rounded-lg shadow-xl w-full h-auto">
+          <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary-200 rounded-lg hidden md:block -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section bg-white">
+    <div class="container-custom">
+      <h2 class="section-title mb-16 fade-in">Sıkça Sorulan Sorular</h2>
+      
+      <div class="max-w-3xl mx-auto">
+        <!-- FAQ Item 1 -->
+        <div class="mb-6 fade-in">
+          <button class="faq-question flex justify-between items-center w-full text-left font-semibold text-lg p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none">
+            <span>Teslimat ne kadar sürede gerçekleşir?</span>
+            <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
+            <div class="p-4 bg-gray-50 rounded-b-lg">
+              <p class="text-gray-700">Stokta bulunan ürünlerin teslimatı genellikle 3-5 iş günü içerisinde gerçekleştirilir. Özel üretim veya sipariş ürünleri için bu süre 2-4 hafta arasında değişebilir. Sipariş verdiğinizde size kesin bir teslimat tarihi bildirilecektir.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 2 -->
+        <div class="mb-6 fade-in" style="animation-delay: 0.2s;">
+          <button class="faq-question flex justify-between items-center w-full text-left font-semibold text-lg p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none">
+            <span>Montaj hizmeti ücretli midir?</span>
+            <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
+            <div class="p-4 bg-gray-50 rounded-b-lg">
+              <p class="text-gray-700">Belirli bir tutarın üzerindeki siparişlerde montaj hizmeti ücretsizdir. Bu tutarın altındaki siparişlerde ise cüzi bir montaj ücreti alınmaktadır. Sipariş esnasında bu bilgi size iletilecektir. Özel montaj gerektiren ürünler için ek ücret talep edilebilir.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 3 -->
+        <div class="mb-6 fade-in" style="animation-delay: 0.4s;">
+          <button class="faq-question flex justify-between items-center w-full text-left font-semibold text-lg p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none">
+            <span>Ürünlerin garanti süresi nedir?</span>
+            <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
+            <div class="p-4 bg-gray-50 rounded-b-lg">
+              <p class="text-gray-700">Tüm Yataş ürünleri 2 yıl yasal garanti kapsamındadır. Ayrıca, yataklarımız için 7 yıla kadar, mobilyalarımız için ise 5 yıla kadar uzatılmış garanti seçeneklerimiz bulunmaktadır. Garanti şartları ve süresi ürün etiketinde belirtilmektedir.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 4 -->
+        <div class="mb-6 fade-in" style="animation-delay: 0.6s;">
+          <button class="faq-question flex justify-between items-center w-full text-left font-semibold text-lg p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none">
+            <span>İade ve değişim koşulları nelerdir?</span>
+            <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
+            <div class="p-4 bg-gray-50 rounded-b-lg">
+              <p class="text-gray-700">Ürünlerimizi, teslim tarihinden itibaren 14 gün içerisinde, kullanılmamış ve hasarsız durumda, orijinal ambalajında iade edebilirsiniz. Özel üretim veya kişiselleştirilmiş ürünlerde iade ve değişim yapılmamaktadır. Ürün kutusunu açtıktan sonra herhangi bir üretim hatası tespit ederseniz, müşteri hizmetlerimizle iletişime geçebilirsiniz.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 5 -->
+        <div class="fade-in" style="animation-delay: 0.8s;">
+          <button class="faq-question flex justify-between items-center w-full text-left font-semibold text-lg p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none">
+            <span>Dekorasyon danışmanlığı nasıl çalışır?</span>
+            <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
+            <div class="p-4 bg-gray-50 rounded-b-lg">
+              <p class="text-gray-700">Dekorasyon danışmanlığı hizmetimiz için randevu almanız gerekiyor. Randevu sonrası, bir iç mimarımız mekânınızı ziyaret eder ve ölçümleri alır. Zevk ve ihtiyaçlarınızı göz önünde bulundurarak, size özel tasarım önerileri ve 3D görselleştirmeler hazırlanır. Belirli bir tutarın üzerindeki alışverişlerde bu hizmet ücretsiz sunulmaktadır.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-primary-600 text-white py-16">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 fade-in">Hizmetlerimiz Hakkında Daha Fazla Bilgi Alın</h2>
+        <p class="text-lg mb-8 fade-in" style="animation-delay: 0.2s;">Sorularınız mı var? Uzman ekibimiz size yardımcı olmak için hazır.</p>
+        <a href="contact.html" class="btn bg-white text-primary-700 hover:bg-gray-100 fade-in" style="animation-delay: 0.4s;">Bize Ulaşın</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Column 1: Logo & About -->
+        <div>
+          <a href="index.html" class="text-2xl font-bold font-heading mb-4 block">
+            YATAŞ
+          </a>
+          <p class="text-gray-400 mb-6">
+            Yaşam alanlarınıza konfor ve şıklık katan mobilya ve yatak ürünleri.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Hızlı Bağlantılar</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Ana Sayfa</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">Hakkımızda</a></li>
+            <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Ürünler</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Hizmetler</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">İletişim</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3: Products -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Ürün Kategorileri</h3>
+          <ul class="space-y-2">
+            <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Yataklar</a></li>
+            <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Koltuk Takımları</a></li>
+            <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Yemek Odaları</a></li>
+            <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Yatak Odaları</a></li>
+            <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Ev Tekstili</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 4: Contact -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">İletişim</h3>
+          <address class="not-italic">
+            <p class="flex items-start mb-2">
+              <svg class="w-5 h-5 mr-2 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span class="text-gray-400">Organize Sanayi Bölgesi, 38070 Melikgazi/Kayseri</span>
+            </p>
+            <p class="flex items-center mb-2">
+              <svg class="w-5 h-5 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span class="text-gray-400">+90 352 321 2000</span>
+            </p>
+            <p class="flex items-center">
+              <svg class="w-5 h-5 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span class="text-gray-400">info@yatas.com.tr</span>
+            </p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 mt-8 text-center">
+        <p class="text-gray-400">&copy; 2025 Yataş. Tüm Hakları Saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-primary-700 focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script type="module" src="src/js/main.js"></script>
+  <script>
+    // Back to Top Button
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add('opacity-100');
+        backToTopButton.classList.remove('invisible');
+      } else {
+        backToTopButton.classList.remove('opacity-100');
+        backToTopButton.classList.add('invisible');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        // Toggle arrow
+        const arrow = question.querySelector('svg');
+        arrow.classList.toggle('rotate-180');
+        
+        // Toggle answer visibility
+        const answer = question.nextElementSibling;
+        
+        if (answer.style.maxHeight) {
+          answer.style.maxHeight = null;
+        } else {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

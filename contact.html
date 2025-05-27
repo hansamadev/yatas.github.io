@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim | Yataş</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="https://www.yatasbedding.com/assets/img/yatas_bedding_logo.jpg" alt="Yataş Logo">
+          </a>
+          <h1>YATAŞ</h1>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="stores.html">Mağazalarımız</a></li>
+            <li><a href="contact.html" class="active">İletişim</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-content">
+      <h1>İletişim</h1>
+      <p>Soru, öneri ve talepleriniz için bizimle iletişime geçebilirsiniz</p>
+    </div>
+  </section>
+
+  <section class="contact-info">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Genel Merkez</h3>
+          <p>Ankara Asfaltı 25. km, Kayseri</p>
+        </div>
+        <div class="contact-card">
+          <div class="icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3>Telefon</h3>
+          <p>+90 352 321 21 21</p>
+        </div>
+        <div class="contact-card">
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>E-posta</h3>
+          <p>info@yatas.com.tr</p>
+        </div>
+        <div class="contact-card">
+          <div class="icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Çalışma Saatleri</h3>
+          <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="contact-form-container">
+        <div class="form-column">
+          <h2>Bize Yazın</h2>
+          <p>Soru, öneri ve talepleriniz için aşağıdaki formu doldurabilirsiniz. En kısa sürede size dönüş yapacağız.</p>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Adınız*</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="surname">Soyadınız*</label>
+              <input type="text" id="surname" name="surname" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-posta Adresiniz*</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon Numaranız</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="subject">Konu</label>
+              <select id="subject" name="subject">
+                <option value="">Seçiniz</option>
+                <option value="information">Bilgi Talebi</option>
+                <option value="complaint">Şikayet</option>
+                <option value="suggestion">Öneri</option>
+                <option value="order">Sipariş</option>
+                <option value="other">Diğer</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Mesajınız*</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">Kişisel verilerimin işlenmesine izin veriyorum.*</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+          </form>
+          <div id="form-success" class="form-success hidden">
+            <div class="success-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Mesajınız Alındı!</h3>
+            <p>Teşekkür ederiz. En kısa sürede size dönüş yapacağız.</p>
+          </div>
+        </div>
+        <div class="info-column">
+          <div class="contact-image">
+            <img src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Yataş Müşteri Hizmetleri">
+          </div>
+          <div class="contact-details">
+            <h3>Bizi Takip Edin</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="customer-service">
+              <h3>Müşteri Hizmetleri</h3>
+              <p><i class="fas fa-phone"></i> 0850 222 28 27</p>
+              <p><i class="fas fa-clock"></i> Hafta içi: 09:00 - 18:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="location-map">
+    <div class="container">
+      <h2>Bize Ulaşın</h2>
+      <div class="map-container">
+        <div id="contact-map" class="map">
+          <!-- Map will be inserted here via JavaScript -->
+          <img src="https://images.pexels.com/photos/1036936/pexels-photo-1036936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Yataş Genel Merkez Harita" class="placeholder-map">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <h2>Sıkça Sorulan Sorular</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Ürünlerinizin garanti süresi nedir?</h3>
+            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Tüm ürünlerimiz 2 yıl üretici garantisi kapsamındadır. Yataklarımız ise modeline göre 5 ila 10 yıl arası garanti süresi ile sunulmaktadır.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Siparişim ne kadar sürede teslim edilir?</h3>
+            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Stokta bulunan ürünlerin teslimatı genellikle 3-7 iş günü içerisinde gerçekleştirilmektedir. Özel üretim ürünlerde bu süre 15-20 iş gününe kadar uzayabilir.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Ürün iadesi yapabilir miyim?</h3>
+            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Evet, satın aldığınız ürünleri, teslim tarihinden itibaren 14 gün içerisinde, kullanılmamış ve hasarsız olması koşuluyla iade edebilirsiniz.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Mağazalarınızda montaj hizmeti var mı?</h3>
+            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Evet, tüm mobilya ürünlerimiz için ücretsiz montaj hizmeti sunmaktayız.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>YATAŞ</h2>
+          <p>Kaliteli Yaşam, Kaliteli Uyku</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Kurumsal</h3>
+            <ul>
+              <li><a href="about.html">Hakkımızda</a></li>
+              <li><a href="about.html#vision">Vizyon & Misyon</a></li>
+              <li><a href="about.html#history">Tarihçe</a></li>
+              <li><a href="about.html#quality">Kalite Politikamız</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Ürünlerimiz</h3>
+            <ul>
+              <li><a href="products.html#bedroom">Yatak Odası</a></li>
+              <li><a href="products.html#livingroom">Oturma Odası</a></li>
+              <li><a href="products.html#diningroom">Yemek Odası</a></li>
+              <li><a href="products.html#mattress">Yatak & Baza</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Müşteri Hizmetleri</h3>
+            <ul>
+              <li><a href="contact.html">İletişim</a></li>
+              <li><a href="stores.html">Mağazalarımız</a></li>
+              <li><a href="#">Sıkça Sorulan Sorular</a></li>
+              <li><a href="#">Garanti Koşulları</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>İletişim</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> Merkez: Ankara Asfaltı 25. km, Kayseri</li>
+              <li><i class="fas fa-phone"></i> +90 352 321 21 21</li>
+              <li><i class="fas fa-envelope"></i> info@yatas.com.tr</li>
+            </ul>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Yataş Grup. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
