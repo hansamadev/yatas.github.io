@@ -26,10 +26,6 @@ yatas-clone/
 ├── style.css # Global stiller
 ├── .gitignore # Git için dışlanacak dosyalar
 
-yaml
-Kopyala
-Düzenle
-
 ---
 
 ## 💡 Kullanılan Teknolojiler
@@ -76,10 +72,9 @@ Bu proje, bir frontend geliştiricisi olarak HTML, CSS ve JavaScript bilgimi pra
 Bu proje Frontend Final Projesi olarak sunulmuştur.
 
 👤 Hazırlayan
-Adı Soyadı: [Senin İsmin]
-Bölüm: [Bölüm adın - Örneğin: Bilgisayar Programcılığı]
-Danışman: [Danışman ismi varsa]
-Teslim Tarihi: 26.05.2025
+Adı Soyadı: İsmail Arda Acat
+Ders: Web Tasarım
+Numara: 221120241060
 
 📝 Not
 Bu çalışma sadece eğitim ve portfolyo amacıyla hazırlanmış olup ticari kullanım amacı taşımamaktadır. Herhangi bir marka ya da kurumla resmi bir bağı yoktur.
